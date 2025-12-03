@@ -1,0 +1,71 @@
+.section-3{
+    height: 70vh;
+    .row-3{
+        padding-inline: 40px;
+        height: 100%;
+         @include Grid(grid , none , 30% 1fr , 20px);
+        .card-why{
+           
+            height: 100%;
+            @include Grid (grid , 1fr 1fr 1fr ,none , 20px);
+            .card-w{
+                height: 300px;
+                padding: 20px;
+               background-color: $color_light-gray;
+               transition: 0.4s;
+               h1{
+                font-family: $font;
+                color: $color_yellow;
+                font-weight: bold
+               }
+               h2{
+                font-family: $font;
+                 color: $color_black;
+                 font-weight: bold
+               }
+               @include flex(flex , none ,none , 18px , column);
+               &:hover {
+                background-color: $color_yellow;
+                color: $colo_withe !important;
+               }
+               
+            }
+        }
+        .content-why{
+            
+            @include flex (flex , center , center , 10px , column);
+            button{
+                border: none;
+                padding: 15px;
+                border-radius: 10px;
+                color: $color_yellow;
+                background-color: $color_light_orange;
+            }
+            h1{
+                font-family: $font;
+                font-weight: bold;
+                span{
+                    color: $color_yellow;
+                    
+                }
+            }
+        }
+    }
+    .up:hover .card-w{
+        padding-top: 50px ;
+
+    }
+
+    .up:hover h1 {
+        color: $colo_withe !important;
+
+    }
+    .up:hover p{
+        color: $colo_withe !important  ;
+    }
+    .up:hover h2{
+        color: $colo_withe !important;
+    }
+
+   
+}

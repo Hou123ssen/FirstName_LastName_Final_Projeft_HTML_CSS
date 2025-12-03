@@ -1,0 +1,55 @@
+.section-galerry {
+    margin-top: 60px;
+
+    .row-7 {
+        @include Grid(grid, none, 20% 1fr, 20px);
+
+        .content-menu {
+            width: 100%;
+            @include flex (flex, center, center, 20px, column);
+            padding-bottom: 20px;
+
+            button {
+                border: none;
+                padding: 15px;
+                border-radius: 10px;
+                color: $color_yellow;
+                background-color: $color_light_orange;
+            }
+
+            h1 {
+                font-family: $font;
+                font-weight: bold;
+
+                span {
+                    color: $color_yellow;
+                }
+            }
+
+        }
+
+        .galerry {
+            img {
+                width: 100%;
+                transition: transform 0.3s ease;
+               
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.1); 
+
+                }
+            }
+
+            @include Grid(grid, none, 1fr 1fr, 10px);
+
+            .top-gal,
+            .bottom-gal {
+                
+                @include Grid(grid, 1fr 1fr 1fr 1fr, none, 7px);
+                div{
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

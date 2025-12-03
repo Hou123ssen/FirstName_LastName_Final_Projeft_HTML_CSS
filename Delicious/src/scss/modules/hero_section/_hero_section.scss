@@ -1,0 +1,123 @@
+.hero {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    .logoSpan {
+        color: $color_yellow;
+        font-family: $font;
+    }
+    .cour-1,
+    .cour-2 {
+        position: absolute;
+        top: 30%;
+
+        h1 {
+            font-size: 70px;
+        }
+        .btn-cour {
+            @include flex (flex, center, center, 10px, none);
+
+            button {
+                background-color: unset;
+                color: $colo_withe;
+                border: none;
+                border: 2px solid $color_yellow;
+                padding: 10px;
+                border-radius: 10px;
+                transition: 0.5s;
+                width: 150px;
+
+                &:hover {
+                    background-color: $color_yellow;
+                }
+            }
+        }
+    }
+    .cour-2 {
+
+        h1,
+        p,
+        .btn-cour {
+            position: relative;
+            z-index: 99999;
+        }
+
+        h1 {
+            font-family: $font;
+        }
+    }
+
+    .drak::after {
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+    }
+
+    .drak {
+        img {
+            width: 100% !important;
+            height: 50% !important;
+        }
+    }
+
+}
+
+.body {
+    width: 99vw;
+    height: 100vh;
+}
+
+#carouselExampleIndicators {
+    height: 100vh;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+        width: auto;
+    }
+}
+
+.animate-slide-down {
+    opacity: 0;
+    transform: translateY(-60px);
+    animation: slideDown 0.8s ease-out forwards;
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-slide {
+    transform: translateY(30px);
+    opacity: 0;
+    animation: downslide 0.6s ease-out forwards;
+}
+
+@keyframes downslide {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+.animate-slide-up{
+    opacity: 0;
+    animation: updown 0.8s ease-in-out forwards;
+    transform: translateY(50px);
+}
+@keyframes updown {
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}

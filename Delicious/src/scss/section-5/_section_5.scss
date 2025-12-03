@@ -1,0 +1,173 @@
+.section-5 {
+    margin-top: 20vh;
+    height: 200vh;
+
+    .row-5 {
+        @include Grid (grid, none, 25% 1fr, 20px);
+
+        .content-menu {
+            width: 100%;
+            @include flex (flex, center, center, 20px, column);
+            padding-bottom: 20px;
+
+            button {
+                border: none;
+                padding: 15px;
+                border-radius: 10px;
+                color: $color_yellow;
+                background-color: $color_light_orange;
+            }
+
+            h1 {
+                font-family: $font;
+                font-weight: bold;
+
+                span {
+                    color: $color_yellow;
+                }
+            }
+        }
+
+        .card-specila {
+            @include Grid(grid, 1fr 60% 1fr, none, 20px);
+            padding-inline: 20px;
+
+            .p-sp {
+                font-weight: bold;
+
+                padding: 7px;
+                transition: 0.5;
+
+                &:hover {
+                    color: $color_yellow;
+                    border-right: 2px solid $color_yellow;
+                    cursor: pointer;
+
+                }
+            }
+
+            .img-spcial {
+                img {
+                    width: 300px;
+                }
+            }
+
+
+
+
+
+        }
+
+        .opation-secila {
+            @include flex (flex, none, none, 20px, column);
+
+
+        }
+
+        .content-specila {
+            h4 {
+                font-family: $font;
+            }
+
+            p {
+                color: gray;
+            }
+        }
+    }
+}
+
+// #specials-1,
+#specials-2,
+#specials-3,
+#specials-4,
+#specials-4-img,
+#specials-3-img,
+#specials-2-img {
+    display: none;
+}
+
+#sed:checked~#specials-1 {
+    #specials-1-img {
+        display: block;
+    }
+}
+
+.carousel-item  {
+    
+    .event {
+        padding: 100px;
+        @include flex(flex, center, center, 20px, none);
+
+        .img-event {
+            img {
+                width: 100px;
+            }
+        }
+        color: $colo_withe;
+        h2{
+            font-weight: bold;
+            border-bottom: 3px solid #ff9800 ;
+            width: fit-content;
+        }
+        h1{
+            font-weight: bold;
+            font-family: $font;
+        }
+        i{
+            color: #ff9800;
+            padding-right: 10px;
+        }
+    }
+}
+.carousel-indicators [data-bs-target] {
+    width: 12px;      
+    height: 12px;     
+    border-radius: 50%; 
+    background-color: #ccc; 
+    margin: 5px;
+    opacity: 1; 
+    transition: 0.3s ease;
+}
+
+.carousel-indicators .active {
+    background-color: #ff9800; 
+    width: 14px;   
+    height: 14px;
+}
+.carousel{
+    padding-bottom: 20px !important;
+    height: 100% !important;
+   
+   
+}
+
+
+.carsal{
+    background-image: url("../images/food/events-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+
+.carsal {
+    position: relative;
+}
+
+.carsal::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+.carsal .carousel-inner,
+.carsal .carousel-item,
+.carsal .event,
+.carsal .content-evente {
+    position: relative;
+    z-index: 2;
+}
+

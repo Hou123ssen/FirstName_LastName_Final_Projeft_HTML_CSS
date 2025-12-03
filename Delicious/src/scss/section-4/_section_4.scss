@@ -1,0 +1,95 @@
+.sction-4 {
+    margin-top: 20vh;
+    height: 100vh;
+    .row-4 {
+        height: 100%;
+        @include Grid (grid, none, 20% 8% 1fr, 20px);
+        .content-menu {
+            width: 100%;
+            @include flex (flex, center, center, 20px, column);
+            padding-bottom: 20px;
+            button {
+                border: none;
+                padding: 15px;
+                border-radius: 10px;
+                color: $color_yellow;
+                background-color: $color_light_orange;
+            }
+            h1 {
+                font-family: $font;
+                font-weight: bold;
+                span {
+                    color: $color_yellow;
+                }
+            }
+        }
+
+        .option {
+            @include flex (flex, center, center, 20px, none);
+            a {
+                text-decoration: none;
+                color: gray;
+                font-family: $font;
+            }
+           
+        }
+
+        .food-menu ,.menuList {
+
+            padding-left: 90px;
+            transition: 1s;
+            @include Grid(grid, 1fr 1fr, none, 70px);
+
+            .left-menu {
+                width: 100%;
+                @include flex(flex, none, none, 30px, column);
+
+                .left {
+                    @include flex(flex, center, none, 10px, none);
+
+                    img {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                    }
+
+                    .catago-price {
+                        width: 100%;
+                        @include flex (flex, center, space-between, 20px, none);
+
+                        .dotted {
+                            width: 100%;
+                            border-bottom: 2px dotted gray;
+                        }
+                        .prix{
+                            color: $color_yellow;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+#starters:checked ~ .food-menu  .salad{
+    display: none !important;
+}
+#salades:checked ~ .food-menu  .grill{
+    display: none !important;
+}
+
+#speciality:checked ~ .food-menu  {
+    .grill , .salad{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
