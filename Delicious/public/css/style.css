@@ -953,4 +953,77 @@ body {
   font-family: "Satisfy", cursive;
 }
 
+.Footer {
+  padding: 50px;
+  background-color: #1e160d;
+  display: grid;
+  grid-template-columns: none;
+  grid-template-rows: 60% 30%;
+  gap: 40px;
+}
+.Footer .contact-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: none;
+  gap: 20px;
+}
+.Footer .contact-footer .local-footer {
+  display: flex;
+  align-items: none;
+  justify-content: none;
+  gap: 20px;
+  flex-direction: none;
+}
+.Footer .contact-footer .local-footer i {
+  color: #ffb03b;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.Footer .contact-footer .local-footer h3 {
+  color: #ffffff;
+  font-family: "Satisfy", cursive;
+}
+.Footer .contact-footer .local-footer p {
+  color: #ffffff;
+}
+.Footer .contact-footer .Follow h3 {
+  font-family: "Satisfy", cursive;
+  color: #ffffff;
+}
+.Footer .contact-footer .Follow .folling {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 10px;
+  flex-direction: none;
+}
+.Footer .contact-footer .Follow .folling div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: gray solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: none;
+}
+.Footer .contact-footer .Follow .folling div i {
+  color: gray;
+}
+
+.Copy span {
+  color: #ffb03b;
+}
+.Copy p {
+  color: #ffffff;
+}
+.Copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=style.css.map */

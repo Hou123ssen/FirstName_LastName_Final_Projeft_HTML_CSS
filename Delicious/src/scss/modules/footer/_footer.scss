@@ -1,0 +1,70 @@
+.Footer {
+    padding: 50px;
+    
+    background-color: $color_dark_brown;
+    @include Grid (grid, none, 60% 30%, 40px);
+
+    .contact-footer {
+        @include Grid(grid, 1fr 1fr 1fr 1fr, none, 20px);
+
+        .local-footer {
+            @include flex (flex, none, none, 20px, none);
+
+            i {
+                color: $color_yellow;
+                font-size: 25px;
+                margin-top: 20px;
+
+            }
+
+            h3 {
+
+                color: $colo_withe;
+                font-family: $font;
+            }
+
+            p {
+                color: $colo_withe;
+            }
+        }
+
+        .Follow {
+            h3 {
+                font-family: $font;
+                color: $colo_withe;
+            }
+
+            .folling {
+                @include flex (flex, center, none, 10px, none);
+
+                div {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: gray solid 1px;
+                    @include flex (flex, center, center, 20px, none);
+
+                    i {
+                        color: gray;
+                    }
+                }
+            }
+
+
+
+        }
+
+
+
+    }
+}
+
+.Copy {
+    span{
+        color: $color_yellow;
+    }
+    p{
+        color: $colo_withe;
+    }
+    @include flex (flex, center, center, 10px, column)
+}
