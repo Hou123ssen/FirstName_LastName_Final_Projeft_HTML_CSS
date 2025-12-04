@@ -79,6 +79,10 @@
   width: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .hero {
   position: absolute;
   top: 0;
@@ -513,7 +517,7 @@
   grid-template-columns: 1fr 60% 1fr;
   grid-template-rows: none;
   gap: 20px;
-  padding-inline: 20px;
+  padding-inline: 80px;
 }
 .section-5 .row-5 .card-specila .p-sp {
   font-weight: bold;
@@ -855,6 +859,98 @@
   background-color: #ffffff;
   width: 14px;
   height: 14px;
+}
+
+.contact {
+  margin-top: 20vh;
+}
+.contact .row-9 {
+  display: grid;
+  grid-template-columns: none;
+  grid-template-rows: 20% 1fr;
+  gap: 20px;
+}
+.contact .row-9 .contact-form {
+  padding-inline: 50px;
+}
+.contact .row-9 .contact-form .FORM {
+  padding: 30px;
+}
+.contact .row-9 .contact-form .FORM input {
+  width: 100%;
+}
+.contact .row-9 .contact-form .FORM .btn-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+  flex-direction: none;
+}
+.contact .row-9 .contact-form .FORM .btn-contact button {
+  margin-top: 50px;
+  border: none;
+  background-color: #ffb03b;
+  color: #ffffff;
+  width: 170px;
+  padding: 17px;
+}
+.contact .row-9 .contact-form .FORM .Cont-inp {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: none;
+}
+.contact .row-9 .contact-form .FORM .Cont-inp input {
+  padding: 20px;
+  height: 50px !important;
+}
+.contact .row-9 .contact-form .FORM {
+  display: flex;
+  align-items: none;
+  justify-content: none;
+  gap: 40px;
+  flex-direction: column;
+}
+.contact .row-9 .contact-form .FORM textarea {
+  margin-top: 3px !important;
+  padding: 20px;
+  width: 100%;
+  height: 180px;
+}
+.contact .row-9 .contact-form {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: none;
+  gap: 20px;
+}
+.contact .row-9 .contact-form .card-contact {
+  box-shadow: 0px 8px 21px -6px #000000;
+  padding: 30px;
+}
+.contact .row-9 .contact-form .card-contact .local, .contact .row-9 .contact-form .card-contact .emaiL, .contact .row-9 .contact-form .card-contact .cal {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 10px;
+  flex-direction: none;
+}
+.contact .row-9 .contact-form .card-contact .local i, .contact .row-9 .contact-form .card-contact .emaiL i, .contact .row-9 .contact-form .card-contact .cal i {
+  font-size: 30px;
+  color: #ffb03b;
+}
+.contact .row-9 .contact-form .card-contact .local h5, .contact .row-9 .contact-form .card-contact .emaiL h5, .contact .row-9 .contact-form .card-contact .cal h5 {
+  font-family: "Satisfy", cursive;
+}
+.contact .row-9 .contact-form .card-contact .emaiL {
+  padding: 10px;
+  border-top: solid gray 1px;
+  border-bottom: solid gray 1px;
+}
+.contact .row-9 .contact-form .card-contact h1 {
+  font-family: "Satisfy", cursive;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
 .section-5 {
     margin-top: 20vh;
     height: 200vh;
-
+    
     .row-5 {
         @include Grid (grid, none, 25% 1fr, 20px);
 
@@ -30,7 +30,7 @@
 
         .card-specila {
             @include Grid(grid, 1fr 60% 1fr, none, 20px);
-            padding-inline: 20px;
+            padding-inline: 80px;
 
             .p-sp {
                 font-weight: bold;
@@ -143,6 +143,7 @@
 
 
 .carsal{
+    
     background-image: url("../images/food/events-bg.jpg");
     background-size: cover;
     background-position: center;
