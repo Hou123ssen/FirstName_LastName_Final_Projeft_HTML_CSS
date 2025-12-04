@@ -820,4 +820,41 @@
   height: 100vh;
 }
 
+.Chafe {
+  margin-top: 50px;
+  margin-left: 30%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.Chafe img {
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50%;
+}
+.Chafe h1, .Chafe p {
+  font-family: "Satisfy", cursive;
+  color: #ffffff;
+}
+.Chafe .bi-star-fill {
+  color: #ffb03b;
+}
+
+.CHAFE {
+  height: 70vh !important;
+  background-image: url("../images/food/testimonials-bg.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.chaF .active {
+  background-color: #ffffff;
+  width: 14px;
+  height: 14px;
+}
+
 /*# sourceMappingURL=style.css.map */

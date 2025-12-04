@@ -22,3 +22,38 @@
 .chef{
     height: 100vh;
 }
+.Chafe{
+    margin-top: 50px;
+    margin-left: 30%;
+    width: 40%;
+    
+    @include flex(flex,center ,center , 10px , column);
+    img{
+        width: 100px !important;
+        height: 100px !important;
+        border-radius: 50%;
+    }
+    h1,p{
+        font-family: $font;
+        color: $colo_withe;
+    }
+    .bi-star-fill{
+        color: $color_yellow;
+    }
+
+}
+
+.CHAFE{
+    height: 70vh !important;
+    background-image: url("../images/food/testimonials-bg.jpg") !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.chaF .active {
+    background-color: $colo_withe; 
+    width: 14px;   
+    height: 14px;
+}
+
