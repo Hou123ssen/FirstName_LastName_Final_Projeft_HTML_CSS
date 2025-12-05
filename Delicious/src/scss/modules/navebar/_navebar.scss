@@ -67,11 +67,10 @@
 
 }
 .navbar{
-    position: fixed;
+    position: relative;
     z-index: 9999;
     margin: auto;
-    width: 100%;
-    
+    width: 100%;   
 }
 body{
     overflow-x: hidden;

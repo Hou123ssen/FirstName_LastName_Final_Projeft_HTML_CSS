@@ -20,14 +20,11 @@
             h1 {
                 font-family: $font;
                 font-weight: bold;
-
                 span {
                     color: $color_yellow;
                 }
             }
-
         }
-
         .galerry {
             img {
                 width: 100%;
@@ -44,7 +41,6 @@
 
             .top-gal,
             .bottom-gal {
-                
                 @include Grid(grid, 1fr 1fr 1fr 1fr, none, 7px);
                 div{
                     overflow: hidden;
@@ -52,4 +48,8 @@
             }
         }
     }
+   
+
+    
+    
 }

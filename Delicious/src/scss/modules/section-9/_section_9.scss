@@ -40,10 +40,9 @@
             }
           @include Grid(grid , 30%  1fr , none, 20px );
           .card-contact{
-            // width: 400px;
             box-shadow: 0px 8px 21px -6px #000000;
             padding: 30px;
-            // width: fit-content;
+            
             .local,.emaiL,.cal{
                 padding: 10px;
                 @include flex(flex , center , none , 10px , none);
@@ -69,4 +68,19 @@
         }
 
     }
+   
+  .CANTACT{
+
+      width: 100%;
+    @include flex (flex, center, center, 20px, column);
+    padding-bottom: 20px;
+
+    button {
+        border: none;
+        padding: 15px;
+        border-radius: 10px;
+        color: $color_yellow;
+        background-color: $color_light_orange;
+    }
+  }
 }

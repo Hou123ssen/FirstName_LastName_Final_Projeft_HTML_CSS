@@ -1,16 +1,12 @@
 .section-tabel {
-
     padding-inline: 50px;
-
     .row-6 {
         padding-inline: 50px;
-        @include Grid(grid, none, 20% 1fr 7%, 20px);
-
+        @include Grid(grid, none, 20% 1fr, 20px);
         .content-menu {
             width: 100%;
             @include flex (flex, center, center, 20px, column);
             padding-bottom: 20px;
-
             button {
                 border: none;
                 padding: 15px;
@@ -38,7 +34,7 @@
 
             img {
                 width: 400px;
-                
+
             }
 
             .btn-tabel {
@@ -55,11 +51,6 @@
 
                 }
             }
-
-
-
-
-
             .bnt-tabel {
                 @include flex(flex, center, center, none, none);
 
@@ -71,24 +62,17 @@
 
                 }
             }
-
             .tap-form {
-
                 padding: 100px;
                 @include flex (flex, none, none, 30px, column);
-
                 input {
                     width: 200vh;
                 }
-
                 .inp-1,
                 .inp-2,
                 .inp-3 {
-
                     width: 100vh;
                     height: 50px;
-                    
-
                     @include flex(flex, none, none, 5px, none);
                 }
 
@@ -101,17 +85,11 @@
                 input {
                     padding: 10px;
                 }
-
-
-
-
-
             }
-
-
-
-
         }
 
     }
+    // special 
+
+    
 }

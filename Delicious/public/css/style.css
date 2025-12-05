@@ -73,7 +73,7 @@
 }
 
 .navbar {
-  position: fixed;
+  position: relative;
   z-index: 9999;
   margin: auto;
   width: 100%;
@@ -155,7 +155,6 @@ body {
 }
 
 #carouselExampleIndicators {
-  height: 100vh;
   overflow: hidden;
 }
 #carouselExampleIndicators img {
@@ -200,7 +199,7 @@ body {
   }
 }
 .section-2 {
-  margin-top: 85vh;
+  margin-top: 90vh !important;
   height: 90vh;
   background-color: #fffaf3;
 }
@@ -645,7 +644,7 @@ body {
   padding-inline: 50px;
   display: grid;
   grid-template-columns: none;
-  grid-template-rows: 20% 1fr 7%;
+  grid-template-rows: 20% 1fr;
   gap: 20px;
 }
 .section-tabel .row-6 .content-menu {
@@ -803,7 +802,9 @@ body {
 .card {
   position: relative;
 }
-.card .card-body-3, .card .card-body-2, .card .card-body-1 {
+.card .card-body-3,
+.card .card-body-2,
+.card .card-body-1 {
   left: 50px;
   top: 90%;
   position: absolute;
@@ -811,12 +812,16 @@ body {
   background-color: #ffffff;
   box-shadow: 0px 8px 10px -2px #000000;
 }
-.card .card-body-3 h5, .card .card-body-2 h5, .card .card-body-1 h5 {
+.card .card-body-3 h5,
+.card .card-body-2 h5,
+.card .card-body-1 h5 {
   padding-bottom: 10px;
   border-bottom: 2px solid gray;
   width: fit-content;
 }
-.card .card-body-3 i, .card .card-body-2 i, .card .card-body-1 i {
+.card .card-body-3 i,
+.card .card-body-2 i,
+.card .card-body-1 i {
   color: gray;
 }
 
@@ -839,7 +844,8 @@ body {
   height: 100px !important;
   border-radius: 50%;
 }
-.Chafe h1, .Chafe p {
+.Chafe h1,
+.Chafe p {
   font-family: "Satisfy", cursive;
   color: #ffffff;
 }
@@ -859,6 +865,23 @@ body {
   background-color: #ffffff;
   width: 14px;
   height: 14px;
+}
+
+.CAH {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.CAH button {
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  color: #ffb03b;
+  background-color: #FFF7EB;
 }
 
 .contact {
@@ -952,6 +975,22 @@ body {
 .contact .row-9 .contact-form .card-contact h1 {
   font-family: "Satisfy", cursive;
 }
+.contact .CANTACT {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.contact .CANTACT button {
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  color: #ffb03b;
+  background-color: #FFF7EB;
+}
 
 .Footer {
   padding: 50px;
@@ -1024,6 +1063,273 @@ body {
   justify-content: center;
   gap: 10px;
   flex-direction: column;
+}
+
+@media (max-width: 420px) {
+  .ph-em {
+    display: none !important;
+  }
+  .TOP {
+    display: flex !important;
+    justify-content: end !important;
+  }
+  .hero-section {
+    height: 85vh;
+  }
+  .hero-section .hero {
+    height: 100% !important;
+  }
+  .hero-section .hero img {
+    height: 100vh !important;
+    object-fit: cover;
+  }
+  .open-menu i {
+    color: #ffffff;
+    font-size: 35px;
+  }
+  .links {
+    position: absolute;
+    display: flex;
+    align-items: start;
+    justify-content: none;
+    gap: 10px;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 77%;
+    height: 50vh;
+    top: 30px;
+    right: -50vh;
+    transition: 0.7s;
+  }
+  .links a {
+    font-weight: bold;
+    color: black !important;
+  }
+  .links .close {
+    position: absolute;
+  }
+  .links .close i {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .links .close {
+    top: -30px;
+    right: 0;
+  }
+  #OPEN:checked ~ .links {
+    right: 45px !important;
+  }
+  #CLOSE:checked ~ .links {
+    right: -50vh !important;
+  }
+  .section-2 {
+    margin-top: 3vh !important;
+    height: 110vh;
+    background-color: #fffaf3;
+    padding: unset !important;
+  }
+  .section-2 .row-1 {
+    padding: unset !important;
+    height: 100%;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 40% 30%;
+    gap: 10px;
+    height: auto;
+    padding-inline: 10px !important;
+  }
+  .section-3 {
+    margin-top: 3vh;
+    height: 70vh;
+  }
+  .section-3 .row-3 {
+    padding-inline: 40px;
+    height: auto;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 10% 1fr;
+    gap: 20px;
+  }
+  .section-3 .row-3 .card-why {
+    height: 100%;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  .sction-4 {
+    margin-top: 50vh !important;
+    height: auto !important;
+  }
+  .sction-4 .food-menu {
+    padding: unset !important;
+    display: unset !important;
+  }
+  .content-menu {
+    width: unset;
+    display: block !important;
+  }
+  .option {
+    display: unset !important;
+  }
+  .row-4 {
+    padding-inline: 20px;
+    height: auto !important;
+    grid-template-rows: 20% 10% 1fr !important;
+    gap: unset !important;
+  }
+  .row-4 .MENU,
+  .row-4 .h {
+    text-align: center !important;
+  }
+  .row-4 .MENU button {
+    padding-top: 20px !important;
+  }
+  .row-4 .h p {
+    font-family: "Satisfy", cursive;
+    padding-left: 10px;
+  }
+  .section-5 {
+    margin-top: 30vh !important;
+    height: auto !important;
+    padding-inline: 20px !important;
+  }
+  .section-5 .op {
+    display: unset !important;
+    padding: unset !important;
+  }
+  .section-5 .row-5 {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 7% 1fr;
+    gap: 20px !important;
+  }
+  .section-5 .row-5 .SPACIAL {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .section-5 .row-5 .event {
+    padding-inline: 10px;
+    display: unset !important;
+  }
+  .section-tabel {
+    margin-top: 7vh;
+    padding: unset !important;
+  }
+  .section-tabel .row-6 {
+    padding-inline: unset !important;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 10% 1fr;
+    gap: 9px !important;
+  }
+  .section-tabel .row-6 .TABAL,
+  .section-tabel .row-6 .Gallery {
+    padding: unset !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column !important;
+  }
+  .section-tabel .row-6 .form {
+    width: 50% !important;
+    width: unset !important;
+    height: auto !important;
+    padding: unset !important;
+    display: unset !important;
+  }
+  .section-tabel .row-6 .form form {
+    padding: unset !important;
+    width: 100% !important;
+    padding: 10px !important;
+  }
+  .section-tabel .row-6 .form form input {
+    width: 100% !important;
+  }
+  .section-tabel .row-6 .form form textarea {
+    padding: 10px;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .section-tabel .row-6 .form form .inp-1,
+  .section-tabel .row-6 .form form .inp-2,
+  .section-tabel .row-6 .form form .inp-3 {
+    width: 100% !important;
+  }
+  .section-tabel .row-6 .form img {
+    width: 100% !important;
+  }
+  .section-galerry {
+    padding-inline: 20px !important;
+  }
+  .section-galerry .row-7 {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 7% 1fr;
+    gap: 7px !important;
+  }
+  .section-galerry .row-7 .galerry {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr;
+    gap: 10px !important;
+  }
+  .section-galerry .row-7 .galerry .top-gal,
+  .section-galerry .row-7 .galerry .bottom-gal {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: none;
+    gap: 3px;
+  }
+  .section-galerry .row-7 .Gallery {
+    padding: unset !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column !important;
+  }
+  .CAH {
+    text-align: center !important;
+  }
+  .card {
+    margin-top: 100px !important;
+  }
+  .CHAFE {
+    margin-top: 5vh !important;
+  }
+  .contact .row-9 {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 10% 1fr;
+    gap: 7px !important;
+  }
+  .contact .row-9 .CANTACT {
+    text-align: center;
+  }
+  .contact .row-9 .contact-form {
+    display: unset !important;
+  }
+  .contact .row-9 .contact-form .FORM {
+    gap: 10px !important;
+  }
+  .contact .row-9 .Cont-inp {
+    display: flex;
+    align-items: none;
+    justify-content: none;
+    gap: 10px;
+    flex-direction: column !important;
+  }
+  Footer .contact-footer {
+    display: unset !important;
+  }
+  Footer .Copy {
+    margin-top: 4vh !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

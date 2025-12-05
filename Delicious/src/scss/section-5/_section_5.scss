@@ -4,12 +4,10 @@
     
     .row-5 {
         @include Grid (grid, none, 25% 1fr, 20px);
-
         .content-menu {
             width: 100%;
             @include flex (flex, center, center, 20px, column);
             padding-bottom: 20px;
-
             button {
                 border: none;
                 padding: 15px;
@@ -17,7 +15,6 @@
                 color: $color_yellow;
                 background-color: $color_light_orange;
             }
-
             h1 {
                 font-family: $font;
                 font-weight: bold;
