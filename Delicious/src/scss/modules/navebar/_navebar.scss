@@ -21,57 +21,91 @@
 
             div {
                 @include flex (flex, center, center, 10px, none);
-                p{
+
+                p {
                     color: $colo_withe;
                 }
-                i{
+
+                i {
                     color: $color_yellow;
                     padding-bottom: 2vh;
                 }
-
             }
         }
-        button{
-           background-color: $color_yellow;
-           color: $colo_withe;
-           border: none;
-           border-radius: 8px;
-           width: 150px;
-           padding: 10px
-            
+
+        button {
+            background-color: $color_yellow;
+            color: $colo_withe;
+            border: none;
+            border-radius: 8px;
+            width: 150px;
+            padding: 10px
         }
     }
 
     .bottom-bar {
+
+
+
         @include flex (flex, center, space-between, 10px, none);
-        .logo{
-            h1{
+
+        .logo {
+            h1 {
                 color: $colo_withe;
-                 font-family: $font;
-                
+                font-family: $font;
+
             }
         }
 
         .links {
-             @include flex (flex, center, center, 30px, none);
-             a{
+            @include flex (flex, center, center, 30px, none);
+
+            a {
                 text-decoration: none;
                 color: $colo_withe;
-                &:hover{
+
+                &:hover {
                     color: $color_yellow;
                 }
-             }
+            }
 
         }
     }
 
 }
-.navbar{
-    position: relative;
-    z-index: 9999;
+
+.navbar {
+    position: fixed;
+    z-index: 99999999;
     margin: auto;
-    width: 100%;   
+    width: 100%;
+    top: 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.3;
+        z-index: -1;
+
+    }
+
+    .close,
+    .open-menu {
+        display: none;
+    }
+
+    .TOP,
+    .bottom-bar {
+        position: relative;
+        z-index: 99999;
+    }
 }
-body{
+
+body {
     overflow-x: hidden;
 }

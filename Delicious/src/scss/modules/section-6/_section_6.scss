@@ -1,5 +1,6 @@
 .section-tabel {
-    padding-inline: 50px;
+    height: auto ;
+    margin-top: 30vh;
     .row-6 {
         padding-inline: 50px;
         @include Grid(grid, none, 20% 1fr, 20px);
@@ -27,16 +28,19 @@
         }
 
         .form {
-            width: 100%;
-            height: 75vh;
+            width: auto !important;
+            height: auto;
+        
             background-color: rgb(238, 236, 236);
             @include Grid(grid, 30% 1fr, none, 10px);
 
             img {
-                width: 400px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
 
             }
-
+          
             .btn-tabel {
                 margin-top: 20vh;
                 @include flex (flex, center, center, 10px, none);
@@ -52,6 +56,7 @@
                 }
             }
             .bnt-tabel {
+                padding: 10px;
                 @include flex(flex, center, center, none, none);
 
                 button {
@@ -63,19 +68,15 @@
                 }
             }
             .tap-form {
-                padding: 100px;
+                padding: 10px;
                 @include flex (flex, none, none, 30px, column);
-                input {
-                    width: 200vh;
-                }
                 .inp-1,
                 .inp-2,
                 .inp-3 {
-                    width: 100vh;
+                    width: 100% ;
                     height: 50px;
                     @include flex(flex, none, none, 5px, none);
                 }
-
                 textarea {
                     padding: 10px;
                     width: 100%;
@@ -83,13 +84,12 @@
                 }
 
                 input {
+                    width: 100%;
                     padding: 10px;
                 }
             }
         }
-
     }
     // special 
-
     
 }

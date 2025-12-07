@@ -1,9 +1,9 @@
 .section-5 {
     margin-top: 20vh;
-    height: 200vh;
-    
+    height: auto !important;
     .row-5 {
-        @include Grid (grid, none, 25% 1fr, 20px);
+       
+        @include Grid (grid, none, 25% 1fr , 20px);
         .content-menu {
             width: 100%;
             @include flex (flex, center, center, 20px, column);
@@ -26,8 +26,9 @@
         }
 
         .card-specila {
-            @include Grid(grid, 1fr 60% 1fr, none, 20px);
+            @include Grid(grid, 20% 70% , none, 10px);
             padding-inline: 80px;
+            width:  100% !important;
 
             .p-sp {
                 font-weight: bold;
@@ -49,16 +50,9 @@
                 }
             }
 
-
-
-
-
         }
-
         .opation-secila {
             @include flex (flex, none, none, 20px, column);
-
-
         }
 
         .content-specila {
@@ -73,24 +67,34 @@
     }
 }
 
-// #specials-1,
-#specials-2,
-#specials-3,
 #specials-4,
-#specials-4-img,
-#specials-3-img,
-#specials-2-img {
-    display: none;
+#specials-3,
+#specials-1 ,
+#specials-2
+{
+   display: none !important;
 }
 
-#sed:checked~#specials-1 {
-    #specials-1-img {
-        display: block;
-    }
+#sed:checked ~ #specials-1{
+    display: flex !important;
 }
+#vel:checked ~ #specials-3 {
+    display: flex !important ;
+
+}
+#aut:checked ~ #specials-4{
+    display: flex !important ;
+
+}
+#est:checked ~ #specials-2{
+    display:  flex !important
+}
+.content-img-special{
+    @include flex (flex , center , space-between , 50px , none);
+}
+
 
 .carousel-item  {
-    
     .event {
         padding: 100px;
         @include flex(flex, center, center, 20px, none);

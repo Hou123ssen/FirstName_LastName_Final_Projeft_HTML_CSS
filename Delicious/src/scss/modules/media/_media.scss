@@ -1,6 +1,84 @@
-@media (max-width:420px) {
+@media (max-width:999px) {
 
     // NAVBAR & HERO
+    .navbar {
+      
+        width: 100%!important;
+    }
+
+    .hero-section {
+        padding-inline: 20px;
+        height: 85vh;
+
+        .hero {
+
+            height: 100% !important;
+
+            img {
+                height: 100vh !important;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .bottom-bar {
+        padding: unset !important;
+    }
+
+    .open-menu {
+        i {
+            color: $colo_withe ;
+            font-size: 35px;
+        }
+    }
+
+    .links {
+        position: absolute;
+        @include flex (flex, start, none, 10px, column);
+        background-color: $colo_withe;
+        width: 77%;
+        height: 50vh;
+        top: 30px;
+        right: -70vh;
+        transition: 0.7s;
+
+        a {
+            font-weight: bold;
+            color: black !important;
+        }
+
+        .close {
+            position: absolute;
+
+            i {
+                color: $colo_withe;
+                font-size: 20px;
+                font-weight: bold;
+
+                &:hover {
+                    color: $color_yellow;
+                }
+            }
+
+            top: -30px;
+            right: 0;
+        }
+    }
+
+
+    .close,
+    .open-menu {
+        display: block !important;
+    }
+
+    #OPEN:checked~.links {
+        right: 80px !important;
+    }
+
+    #CLOSE:checked~.links {
+        right: -90vh !important;
+    }
+
     .ph-em {
         display: none !important;
     }
@@ -10,12 +88,395 @@
         justify-content: end !important;
     }
 
-    .hero-section {
+    .navbar {
+        padding-inline: 70px;
+    }
 
+    // about 
+
+    .section-2 {
+
+        margin-top: 10vh !important;
+        height: 110vh;
+        background-color: $bg_setion;
+        padding: unset !important;
+        padding-inline: 50px !important;
+
+        .row-1 {
+            width: 100%;
+
+            padding-inline: 80px !important;
+            height: 100%;
+            @include Grid (grid, none, 40% 30%, 10px);
+            height: auto;
+
+        }
+
+        .contant-video {
+            i {
+                color: $color_yellow !important;
+            }
+
+            p {
+                font-size: large !important;
+            }
+        }
+
+        .img {
+            width: 100% !important;
+        }
+
+        .info-video {
+            margin-top: 9vh !important;
+        }
+    }
+
+    .img-cursil {
+        margin-left: 1vh !important;
+        width: 100%;
+
+        img {
+            width: 100% !important;
+
+        }
+    }
+
+    .HEDDIN {
+
+        .imG,
+        iframe {
+            margin-top: 35vh;
+            margin-left: 13vh;
+            width: 500px;
+
+        }
+
+        iframe {
+            margin-top: 36vh;
+            margin-left: 13vh !important;
+
+        }
+
+        label {
+            right: 0% !important;
+
+            i {
+                color: $colo_withe;
+            }
+        }
+
+        margin-right: 8px !important;
+
+    }
+
+    // Why us
+
+    .section-3 {
+        margin-top: 3vh;
+        height: auto !important;
+        padding-inline: 50px !important;
+        width: 100%;
+
+        .row-3 {
+
+            padding-inline: 40px;
+            height: auto;
+            @include Grid(grid, none, 10% 1fr, 20px);
+
+            .card-why {
+
+                height: auto !important;
+                @include Grid (grid, none, 1fr, 20px);
+            }
+        }
+    }
+
+    // menu
+    .sction-4 {
+        padding-inline: 80px !important;
+        margin-top: 50vh !important;
+        height: auto !important;
+
+        .food-menu {
+            padding: unset !important;
+            display: unset !important;
+        }
+
+        .content-menu {
+            width: unset;
+            display: block !important;
+        }
+
+        .option {
+            display: unset !important;
+        }
+
+        .row-4 {
+            padding-inline: 20px;
+            height: auto !important;
+            grid-template-rows: 20% 10% 1fr !important;
+            gap: unset !important;
+
+
+            .MENU,
+            .h {
+                text-align: center !important;
+            }
+
+            .MENU {
+                button {
+                    padding-top: 20px !important;
+                }
+            }
+
+            .h {
+
+
+                p {
+                    font-family: $font;
+                    padding-left: 10px;
+                }
+            }
+
+        }
+
+        .left {
+            .Content-menu {
+                width: 100% !important;
+            }
+
+        }
+    }
+
+    //option 
+    .section-5 {
+        margin-top: 30vh !important;
+        height: auto !important;
+        padding-inline: 50px !important;
+
+        .op {
+
+            display: unset !important;
+            padding: unset !important;
+        }
+
+        .row-5 {
+            padding-inline: 50px !important;
+            @include Grid (grid, none, 7% 1fr, 20px !important);
+
+            .SPACIAL {
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .event {
+                padding-inline: 10px;
+                display: unset !important;
+            }
+        }
+
+        .img-spcial {
+            @include flex (flex, center, center, none, none !important)
+        }
+    }
+
+    .content-img-special {
+        display: unset !important;
+    }
+
+    .content-img-special {
+        @include flex (flex, none, none, 10px, column)
+    }
+
+    .carsal {
+        padding: unset !important;
+        width: 100% !important;
+
+    }
+
+    .content-evente {
+        padding-inline: 20px !important;
+    }
+
+    #specials-4,
+    #specials-3,
+    #specials-1,
+    #specials-2 {
+        flex-direction: column-reverse !important;
+    }
+
+    // table 
+    .section-tabel {
+        margin-top: 7vh;
+        padding: unset !important;
+        padding-inline: 50px !important;
+
+        .row-6 {
+
+            padding-inline: unset !important;
+            padding-inline: 50px !important;
+            @include Grid(grid, none, 10% 1fr, 9px !important);
+
+            .TABAL,
+            .Gallery {
+                padding: unset !important;
+                text-align: center;
+                @include flex (flex, center, center, 10px, column !important)
+            }
+
+            .form {
+                width: 50% !important;
+                width: unset !important;
+                height: auto !important;
+                padding: unset !important;
+                display: unset !important;
+
+
+                form {
+                    padding: unset !important;
+                    width: 100% !important;
+                    padding: 10px !important;
+
+                    input {
+                        width: 100% !important;
+                    }
+
+                    textarea {
+                        padding: 10px;
+                        width: 100% !important;
+                        height: 100% !important;
+                    }
+
+                    .inp-1,
+                    .inp-2,
+                    .inp-3 {
+                        width: 100% !important;
+                    }
+                }
+
+                img {
+                    width: 100% !important;
+                }
+
+
+            }
+        }
+
+
+    }
+
+    // Gallery
+    .section-galerry {
+        padding-inline: 20px !important;
+
+        .row-7 {
+            padding-inline: 80px !important;
+            @include Grid(grid, none, 20% 1fr, 7px !important);
+
+            .galerry {
+                height: auto !important;
+                @include Grid(grid, none, 1fr 1fr, 10px !important);
+
+                .top-gal,
+                .bottom-gal {
+                    @include Grid(grid, 1fr 1fr 1fr, none, 3px);
+                    flex-wrap: wrap !important;
+                }
+            }
+
+            .Gallery {
+                padding: unset !important;
+                text-align: center;
+                @include flex (flex, center, center, 20px, column !important)
+            }
+        }
+    }
+
+    // CHAFE 
+
+   
+
+    // contact 
+    .contact {
+        .row-9 {
+            padding-inline: 50px !important;
+            @include Grid(grid, none, 10% 1fr, 7px !important);
+
+            .CANTACT {
+                text-align: center;
+            }
+
+            .contact-form {
+                display: unset !important;
+
+                .FORM {
+                    gap: 10px !important;
+                }
+            }
+
+            .Cont-inp {
+                @include flex (flex, center, center, 10px, none !important)
+            }
+        }
+    }
+
+    // .container {
+    //     flex-wrap: wrap !important;
+    //     padding-inline: 70px !important;
+    //     margin-bottom: 40px !important;
+
+
+    //     .card-body-3,
+    //     .card-body-2,
+    //     .card-body-1 {
+    //         left: 3px;
+    //         top: 90%;
+    //         position: absolute;
+    //         width: auto;
+
+    //     }
+    // }
+  
+
+    // footer 
+    .Footer .contact-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: none;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width:420px) {
+
+    // NAVBAR & HERO
+    .ph-em {
+        display: none !important;
+    }
+
+    .navbar {
+        padding-inline: unset !important;
+        width: 97% !important;
+
+    }
+
+    .TOP {
+        width: 100%;
+        display: flex !important;
+        width: 38vh !important;
+        justify-content: end !important;
+    }
+
+    .bottom-bar {
+        width: 100% !important;
+    }
+
+    .hero-section {
+        padding-inline: unset !important;
         height: 85vh;
 
         .hero {
-
             height: 100% !important;
 
             img {
@@ -39,8 +500,13 @@
         width: 77%;
         height: 50vh;
         top: 30px;
-        right: -50vh;
+        right: -60vh;
         transition: 0.7s;
+
+        .close,
+        .open-menu {
+            display: block !important;
+        }
 
         a {
             font-weight: bold;
@@ -59,43 +525,80 @@
             top: -30px;
             right: 0;
         }
+
     }
 
     #OPEN:checked~.links {
-        right: 45px !important;
+        right: 50px !important;
     }
 
     #CLOSE:checked~.links {
-        right: -50vh !important;
+        right: -60vh !important;
+    }
+
+    .bottom-bar,
+    .bottom-bar {
+        padding: unset !important;
     }
 
     // ABOUT
 
     .section-2 {
 
-        margin-top: 3vh !important;
-        height: 130vh !important;
+        margin-top: 7vh !important;
+        height: auto;
         background-color: $bg_setion;
-        padding: unset !important;
+        padding-inline: unset !important;
 
         .row-1 {
-            padding: unset !important;
+            padding-inline: unset !important;
             height: 100%;
             @include Grid (grid, none, 40% 30%, 10px);
             height: auto;
-            padding-inline: 10px !important;
+            padding-inline: unset !important;
         }
     }
+
+
+
+    label {
+        right: 0% !important;
+
+        i {
+            color: $colo_withe;
+        }
+    }
+
+    .imG {
+        margin-top: 35vh;
+        margin-left: 7.1vh !important;
+        width: 300px !important;
+
+    }
+
+    .video {
+        margin-top: 10vh !important;
+        margin-left: -59px !important;
+
+
+        iframe {
+            width: auto !important;
+            height: auto !important;
+        }
+
+
+    }
+
 
     // why us
 
     .section-3 {
-        margin-top: 7vh  !important;
-        height: 70vh;
-       
+
+        margin-top: 40px !important;
+        height: auto !important;
+        padding-inline: unset !important;
 
         .row-3 {
-
             padding-inline: 40px;
             height: auto;
             @include Grid(grid, none, 10% 1fr, 20px);
@@ -111,15 +614,15 @@
     // menu 
 
     .sction-4 {
-
         margin-top: 20vh !important;
         height: auto !important;
 
         .food-menu {
             padding: unset !important;
             display: unset !important;
-
         }
+
+        padding-inline: unset !important;
 
     }
 
@@ -165,6 +668,7 @@
         margin-top: 30vh !important;
         height: auto !important;
         padding-inline: 20px !important;
+        padding-inline: unset !important;
 
         .op {
 
@@ -173,6 +677,7 @@
         }
 
         .row-5 {
+            padding-inline: unset !important;
             @include Grid (grid, none, 7% 1fr, 20px !important);
 
             .SPACIAL {
@@ -185,6 +690,22 @@
                 display: unset !important;
             }
         }
+
+    }
+
+    .content-img-special {
+        display: unset !important;
+    }
+
+    .content-img-special {
+        @include flex (flex, none, none, 10px, column)
+    }
+
+    #specials-4,
+    #specials-3,
+    #specials-1,
+    #specials-2 {
+        flex-direction: column-reverse !important;
     }
 
     // table 
@@ -193,7 +714,7 @@
         padding: unset !important;
 
         .row-6 {
-            padding-inline: unset !important;
+            padding-inline: 10px !important;
             @include Grid(grid, none, 10% 1fr, 9px !important);
 
             .TABAL,
@@ -250,6 +771,7 @@
 
         .row-7 {
             @include Grid(grid, none, 7% 1fr, 7px !important);
+            padding-inline: unset !important;
 
             .galerry {
                 @include Grid(grid, none, 1fr, 10px !important);
@@ -283,10 +805,24 @@
         margin-top: 5vh !important;
     }
 
+    .container {
+        padding-inline: 14px !important;
+    }
+
+    .card-body-3,
+    .card-body-2,
+    .card-body-1 {
+        left: 5vh !important;
+        top: 90%;
+        position: absolute;
+        width: auto;
+    }
+
     //  contact 
     .contact {
 
         .row-9 {
+            padding-inline: unset !important;
             @include Grid(grid, none, 10% 1fr, 7px !important);
 
             .CANTACT {
@@ -319,361 +855,5 @@
             margin-top: 4vh !important;
         }
     }
-
-
-}
-
-
-@media (max-width:768px) {
-
-
-    // NAVBAR & HERO
-
-
-    .hero-section {
-
-        height: 85vh;
-
-        .hero {
-
-            height: 100% !important;
-
-            img {
-                height: 100vh !important;
-                object-fit: cover;
-            }
-        }
-    }
-
-    .open-menu {
-        i {
-            color: $colo_withe ;
-            font-size: 35px;
-        }
-    }
-
-    .links {
-        position: absolute;
-        @include flex (flex, start, none, 10px, column);
-        background-color: $colo_withe;
-        width: 77%;
-        height: 50vh;
-        top: 30px;
-        right: -70vh;
-        transition: 0.7s;
-
-        a {
-            font-weight: bold;
-            color: black !important;
-        }
-
-        .close {
-            position: absolute;
-
-            i {
-                color: $colo_withe;
-                font-size: 20px;
-                font-weight: bold;
-
-                &:hover {
-                    color: $color_yellow;
-                }
-            }
-
-            top: -30px;
-            right: 0;
-        }
-    }
-
-    #OPEN:checked~.links {
-        right: 80px !important;
-    }
-
-    #CLOSE:checked~.links {
-        right: -70vh !important;
-    }
-
-    .ph-em {
-        display: none !important;
-    }
-
-    .TOP {
-        display: flex !important;
-        justify-content: end !important;
-    }
-
-    // about 
-
-    .section-2 {
-
-        margin-top: 10vh !important;
-        height: 110vh;
-        background-color: $bg_setion;
-        padding: unset !important;
-
-        .row-1 {
-            padding: unset !important;
-            height: 100%;
-            @include Grid (grid, none, 40% 30%, 10px);
-            height: auto;
-            padding-inline: 10px !important;
-        }
-
-        .contant-video {
-            i {
-                color: $color_yellow !important;
-            }
-
-            p {
-                font-size: large !important;
-            }
-        }
-
-        .img {
-            width: 100% !important;
-        }
-
-        .info-video {
-            margin-top: 9vh !important;
-        }
-    }
-
-    // Why us
-
-    .section-3 {
-        margin-top: 3vh;
-        height: auto !important;
-
-        .row-3 {
-
-            padding-inline: 40px;
-            height: auto;
-            @include Grid(grid, none, 10% 1fr, 20px);
-
-            .card-why {
-
-                height: auto !important;
-                @include Grid (grid, none, 1fr, 20px);
-            }
-        }
-    }
-
-    // menu
-
-    .sction-4 {
-
-        margin-top: 50vh !important;
-        height: auto !important;
-
-        .food-menu {
-            padding: unset !important;
-            display: unset !important;
-
-        }
-
-        .content-menu {
-            width: unset;
-            display: block !important;
-        }
-
-        .option {
-            display: unset !important;
-        }
-
-        .row-4 {
-            padding-inline: 20px;
-            height: auto !important;
-            grid-template-rows: 20% 10% 1fr !important;
-            gap: unset !important;
-
-
-            .MENU,
-            .h {
-                text-align: center !important;
-            }
-
-            .MENU {
-                button {
-                    padding-top: 20px !important;
-                }
-            }
-
-            .h {
-
-
-                p {
-                    font-family: $font;
-                    padding-left: 10px;
-                }
-            }
-
-        }
-
-        .left {
-            .Content-menu {
-                width: 100% !important;
-            }
-
-        }
-
-
-
-    }
-
-    //option 
-    .section-5 {
-        margin-top: 30vh !important;
-        height: auto !important;
-        .op {
-
-            display: unset !important;
-            padding: unset !important;
-        }
-
-        .row-5 {
-            @include Grid (grid, none, 7% 1fr, 20px !important);
-
-            .SPACIAL {
-                text-align: center;
-                margin-top: 30px;
-            }
-
-            .event {
-                padding-inline: 10px;
-                display: unset !important;
-            }
-        }
-
-        .img-spcial {
-            @include flex (flex, center, center, none, none !important)
-        }
-    }
-
-    .carsal {
-        padding: unset !important;
-        width: 100% !important;
-    }
-
-    // table 
-    .section-tabel {
-        margin-top: 7vh;
-        padding: unset !important;
-
-        .row-6 {
-            padding-inline: unset !important;
-            @include Grid(grid, none, 10% 1fr, 9px !important);
-
-            .TABAL,
-            .Gallery {
-                padding: unset !important;
-                text-align: center;
-                @include flex (flex, center, center, 10px, column !important)
-            }
-
-            .form {
-                width: 50% !important;
-                width: unset !important;
-                height: auto !important;
-                padding: unset !important;
-                display: unset !important;
-
-
-                form {
-                    padding: unset !important;
-                    width: 100% !important;
-                    padding: 10px !important;
-
-                    input {
-                        width: 100% !important;
-                    }
-
-                    textarea {
-                        padding: 10px;
-                        width: 100% !important;
-                        height: 100% !important;
-                    }
-
-                    .inp-1,
-                    .inp-2,
-                    .inp-3 {
-                        width: 100% !important;
-                    }
-                }
-
-                img {
-                    width: 100% !important;
-                }
-
-
-            }
-        }
-
-
-    }
-   
-    // Gallery
-    .section-galerry {
-        padding-inline: 20px !important;
-
-        .row-7 {
-            @include Grid(grid, none, 20% 1fr, 7px !important);
-
-            .galerry {
-                height: auto !important;
-                @include Grid(grid, none, 1fr 1fr, 10px !important);
-
-                .top-gal,
-                .bottom-gal {
-                    @include Grid(grid, 1fr 1fr 1fr, none, 3px);
-                    flex-wrap: wrap !important;
-                }
-            }
-
-            .Gallery {
-                padding: unset !important;
-                text-align: center;
-                @include flex (flex, center, center, 20px, column !important)
-            }
-        }
-    }
-     
-    // CHAFE 
-
-      #hefs-row {
-    display: flex !important;
-    flex-wrap: wrap !important;
-  }
-    .contact {
-
-        .row-9 {
-            @include Grid(grid, none, 10% 1fr, 7px !important);
-
-            .CANTACT {
-                text-align: center;
-            }
-
-            .contact-form {
-                display: unset !important;
-
-                .FORM {
-                    gap: 10px !important;
-                }
-            }
-
-            .Cont-inp {
-                @include flex (flex, center, center, 10px, none !important)
-            }
-        }
-    }
-
-    // footer 
-  .Footer .contact-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr  !important;
-    grid-template-rows: none;
-    gap: 20px;
-}
-    
-
 
 }

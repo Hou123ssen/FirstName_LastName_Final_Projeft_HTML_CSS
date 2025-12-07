@@ -1,6 +1,6 @@
 .card {
     position: relative;
-
+    
     .card-body-3,
     .card-body-2,
     .card-body-1 {
@@ -24,6 +24,14 @@
     }
 
 }
+ .content-menu {
+            h1 {
+                font-family: $font !important;
+            }
+            span{
+                color: $color_yellow;
+            }
+        }
 
 .chef {
     height: 100vh;
@@ -55,7 +63,8 @@
 }
 
 .CHAFE {
-    height: 70vh !important;
+    margin-top: 7vh;
+    height: 80vh !important;
     background-image: url("../images/food/testimonials-bg.jpg") !important;
     background-size: cover;
     background-position: center;

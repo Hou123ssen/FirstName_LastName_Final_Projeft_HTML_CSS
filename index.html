@@ -36,14 +36,14 @@
                 <input type="radio" name="menu" hidden id="OPEN">
                 <input type="radio" name="menu" hidden id="CLOSE">
                 <div class="links">
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Specials</a>
-                    <a href="">Evants</a>
-                    <a href="">Chafes</a>
-                    <a href="">Gallary</a>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#specials">Specials</a>
+                    <a href="event">Evants</a>
+                    <a href="#chaf">Chafes</a>
+                    <a href="#Gallary">Gallary</a>
                     <a href="">Dropdown</a>
-                    <a href="">Contact</a>
+                    <a href="#contact">Contact</a>
                     <div class="close">
                         <label for="CLOSE">
                             <i class="bi bi-x-lg"></i>
@@ -59,7 +59,7 @@
         </div>
     </nav>
     <!-- hero section -->
-    <section class="hero-section">
+    <section class="hero-section" id="home">
         <div id="carouselExampleIndicators" class="carousel slide hero Sh ">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -128,25 +128,31 @@
             </button>
         </div>
     </section>
-
-    <!-- caursal about -->
+    <!-- carusal about -->
     <input type="radio" hidden name="main" id="Open">
-    <input type="radio" hidden name="dima" id="close">
-
-    <div id="carouselExample" class="carousel slide HEDDIN ">
+    <div id="carouselExample" class="carousel slide HEDDIN " id="event">
+        <input type="radio" hidden name="main" id="close">
         <label for="close">
             <i class="bi bi-x-lg"></i>
         </label>
         <div class="carousel-inner">
-            <div class="carousel-item active cter">
+            <div class="carousel-item video" data-bs-interval="1000">
+                <iframe  width="560"  height="315" 
+                    src="https://www.youtube.com/embed/Y7f98aduVJ8?autoplay=1&mute=1&rel=0&modestbranding=1"
+                    frameborder="0" allow="autoplay; encrypted-media; fullscreen"
+                    allowfullscreen referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+            <div class="carousel-item active cter " data-bs-interval="2000">
                 <img src="./Delicious/public/images/gallery/gallery-1.jpg" class=" d-block w-60 imG " alt="...">
             </div>
-            <div class="carousel-item cter">
+            <div class="carousel-item cter" data-bs-interval="3000">
                 <img src="./Delicious/public/images/gallery/gallery-2.jpg" class=" d-block w-60 imG" alt="...">
             </div>
-            <div class="carousel-item cter">
+            <div class="carousel-item cter" data-bs-interval="4000">
                 <img src="./Delicious/public/images/gallery/gallery-3.jpg" class=" d-block w-60 imG" alt="...">
             </div>
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -158,10 +164,11 @@
         </button>
     </div>
     <!--  about  -->
-    <div class="section-2">
+    <div class="section-2" id="about">
         <div class="row-1">
-            <div class="img-cursil">
+            <div class="img-cursil up-about">
                 <img src="./Delicious/public/images/food/about.jpg" alt="">
+
                 <div class="play">
                     <label for="Open">
                         <i class="bi bi-play-fill"></i>
@@ -169,7 +176,7 @@
                 </div>
             </div>
 
-            <div class="info-video">
+            <div class="info-video up-content">
                 <div>
                     <h1>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -197,7 +204,7 @@
         </div>
     </div>
     <!-- why us -->
-    <div class="section-3">
+    <div class="section-3" id="why us">
         <div class="row-3">
             <div class="content-why">
                 <button>Why Us</button>
@@ -231,10 +238,10 @@
             </div>
         </div>
     </div>
-
     <!-- section menu -->
-    <div class="sction-4">
+    <div class="sction-4" id="menu">
         <div class="row-4">
+
             <div class="content-menu MENU">
                 <button>Menu</button>
                 <h1>Check Our Tasty <span>Menu</span></h1>
@@ -259,8 +266,8 @@
             <input type="radio" hidden name="category" id="salades">
             <input type="radio" hidden name="category" id="speciality">
             <input type="radio" hidden name="category" id="all">
-            <div class="food-menu">
 
+            <div class="food-menu">
                 <div class="left-menu">
 
                     <div class="left grill" data-cate="starters">
@@ -422,9 +429,8 @@
             </div>
         </div>
     </div>
-
     <!-- opation  -->
-    <section class="section-5">
+    <section class="section-5" id="specials">
         <div class="row-5">
             <div class="content-menu SPACIAL">
                 <button>special</button>
@@ -433,76 +439,102 @@
             <div class="card-specila op">
                 <div class="opation-secila">
                     <div>
-                        <input type="radio" name="filter" hidden id="est" checked>
-                        <p class="p-sp">medi sit est</p>
+                        <label for="est">
+                            <p class="p-sp">medi sit est</p>
+                        </label>
                     </div>
                     <div>
-                        <input type="radio" name="filter" hidden id="sed">
-                        <p class="p-sp">Unde praesentium sed</p>
+                        <label for="sed">
+                            <p class="p-sp">Unde praesentium est</p>
+                        </label>
                     </div>
                     <div>
-                        <input type="radio" name="filter" hidden id="vel">
-                        <p class="p-sp">pariatur explicabo vel </p>
+
+                        <label for="vel">
+                            <p class="p-sp">pariatur explicabo vel </p>
+                        </label>
                     </div>
                     <div>
-                        <input type="radio" name="filter" hidden id="aut">
-                        <p class="p-sp">lust ut expedita aut</p>
+                        <label for="aut">
+                            <p class="p-sp">lust ut expedita aut</p>
+                        </label>
                     </div>
                 </div>
+                <!-- chakebox specila -->
+                <input type="radio" name="filter" hidden id="aut">
+                <input type="radio" name="filter" hidden id="vel">
+                <input type="radio" name="filter" hidden id="sed">
+                <input type="radio" name="filter" hidden id="est" checked>
+                <!-- chakebox specila -->
+                <div class="content-img-special ACTIVE" id="specials-1">
+                    <div class="content-specila">
+                        <h4>Impedit facilis occaecati odio neque aperiam sit</h3>
+                            <p>
+                                eos volupta quo odio similique illum id qidem none enim fuga qui mnaturs non sun dicta
+                                dolor
 
-                <div class="content-specila  " id="specials-1">
-                    <h4>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                        <p>Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus
-                        </p>
-                        <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam
-                            necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur
-                            corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum
-                            inventore</p>
-                </div>
-                <div class="img-spcial">
-                    <img src="./Delicious/public/images/food/specials-1.jpg" alt="pro" id="specials-1-img">
+                            </p>
+                            <p>
+                                lure officis odit rerum harm sequi eum illum corrpt ciupa veriteatei quisquam .Neqiu
+                                commid ipam minim molestiae sed loboriosem a iste odio erum odit resciun tfugaiat sit
+                                ullam . coluta et huram valupatem option quae
+                            </p>
+                    </div>
+                    <div class="img-spcial">
+                        <img src="./Delicious/public/images/food/specials-1.jpg" alt="pro" id="specials-1-img">
+                    </div>
                 </div>
                 <!--  -->
-                <div class="content-specila  " id="specials-2">
-                    <h4>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                        <p>Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus
-                        </p>
-                        <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam
-                            necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur
-                            corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum
-                            inventore</p>
-
-                </div>
-                <div class="img-spcial">
-                    <img src="./Delicious/public/images/food/specials-2.jpg" alt="" id="specials-2-img">
-                </div>
-                <!--  -->
-                <div class="content-specila  " id="specials-3">
-                    <h4>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                        <p>Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus
-                        </p>
-                        <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam
-                            necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur
-                            corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum
-                            inventore</p>
-
-                </div>
-                <div class="img-spcial">
-                    <img src="./Delicious/public/images/food/specials-3.jpg" alt="" id="specials-3-img">
+                <div class="content-img-special" id="specials-2">
+                    <div class="content-specila">
+                        <h4>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                            <p>
+                                Omins blanditills sepw eos autem qui sunct debitis proro quiq excitatonme nosturn ominis
+                                ut reciendis repudiandea minus omins recusandea ut non quam
+                                ut quaod eius qui ipsum qui odit vero atque quibusdam amet Occaecait sed est sint aut
+                                veriteateim moleiea volupatev vel
+                            </p>
+                            <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam
+                                necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur
+                                corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum
+                                inventore
+                            </p>
+                    </div>
+                    <div class="img-spcial">
+                        <img src="./Delicious/public/images/food/specials-2.jpg" alt="" id="specials-2-img">
+                    </div>
                 </div>
                 <!--  -->
-                <div class="content-specila  " id="specials-4">
-                    <h4>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                        <p>Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus
-                        </p>
-                        <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam
-                            necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur
-                            corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum
-                            inventore</p>
-
+                <div class="content-img-special" id="specials-3">
+                    <div class="content-specila">
+                        <h4>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                            <p>Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus
+                            </p>
+                            <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam
+                                necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur
+                                corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum
+                                inventore
+                            </p>
+                    </div>
+                    <div class="img-spcial">
+                        <img src="./Delicious/public/images/food/specials-3.jpg" alt="" id="specials-3-img">
+                    </div>
                 </div>
-                <div class="img-spcial">
-                    <img src="./Delicious/public/images/food/specials-4.jpg" alt="" id="specials-4-img">
+                <!--  -->
+                <div class="content-img-special" id="specials-4">
+                    <div class="content-specila">
+                        <h4>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                            <p>Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus
+                            </p>
+                            <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam
+                                necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur
+                                corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum
+                                inventore
+                            </p>
+                    </div>
+                    <div class="img-spcial">
+                        <img src="./Delicious/public/images/food/specials-4.jpg" alt="" id="specials-4-img">
+                    </div>
                 </div>
             </div>
 
@@ -609,9 +641,8 @@
             </div>
 
     </section>
-
     <!--  Book a Table -->
-    <section class="section-tabel">
+    <section class="section-tabel" >
         <div class="row-6">
             <div class="content-menu TABAL">
                 <button>special</button>
@@ -643,13 +674,10 @@
 
                 </form>
             </div>
-
-
-
         </div>
     </section>
     <!-- Gallery-->
-    <section class="section-galerry">
+    <section class="section-galerry" id="Gallary">
         <div class="row-7">
             <div class="content-menu Gallery ">
                 <button>Gallery</button>
@@ -691,81 +719,71 @@
 
         </div>
     </section>
-
     <!--  chafe -->
-    <section class="py-5 chef mt-5 h-auto chef">
-        <div class="container ">
-            <div class="content-menu CAH">
-                <button>Chefs</button>
-                <h1>Our Professional <span>Chefs</span></h1>
-            </div>
-
-            <div class="row g-4 chefs-row " id=" chefs-row">
-
-                <!-- Card 1 -->
-                <div class="col-md-4 sm-m-5 sm-p-5">
-                    <div class="card border-0 shadow-sm">
-                        <img src="./Delicious/public/images/chefs/chefs-1.jpg" class="card-img-top" alt="Chef">
-                        <div class="card-body-1 p-1">
-                            <h5 class="card-title mb-1">Walter White</h5>
-                            <p class="text-muted">Master Chef</p>
-
-                            <div class="d-flex gap-3 justify-content-end">
-                                <a href="#"><i class="bi bi-twitter"></i></a>
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col-md-4 sm-p-5">
-                    <div class="card border-0 shadow-sm ">
-                        <img src="./Delicious/public/images/chefs/chefs-2.jpg" class="card-img-top" alt="Chef">
-                        <div class="card-body-2 p-1 ">
-                            <h5 class="card-title mb-1">Sarah Jhonson</h5>
-                            <p class="text-muted">Patissier</p>
-
-                            <div class="d-flex gap-3 justify-content-end">
-                                <a href="#"><i class="bi bi-twitter"></i></a>
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-md-4 sm-p-5">
-                    <div class="card border-0 shadow-sm">
-                        <img src="./Delicious/public/images/chefs/chefs-3.jpg" class="card-img-top" alt="Chef">
-                        <div class="card-body-3 p-1">
-                            <h5 class="card-title mb-1">William Anderson</h5>
-                            <span></span>
-                            <p class="text-muted">Cook</p>
-
-                            <div class="d-flex gap-3 justify-content-end">
-                                <a href="#"><i class="bi bi-twitter"></i></a>
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+   <section class="py-5 chef mt-5 h-auto chef" id="chaf">
+    <div class="container">
+        
+        <div class="content-menu CAH">
+            <button>Chefs</button>
+            <h1>Our Professional <span>Chefs</span></h1>
         </div>
-    </section>
+
+        <div class="row g-4 chefs-row" id="chefs-row">
+
+           
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="./Delicious/public/images/chefs/chefs-1.jpg" class="card-img-top" alt="Chef">
+                    <div class="card-body-1 p-1">
+                        <h5 class="card-title mb-1">Walter White</h5>
+                        <p class="text-muted">Master Chef</p>
+                        <div class="d-flex gap-3 justify-content-end">
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="./Delicious/public/images/chefs/chefs-2.jpg" class="card-img-top" alt="Chef">
+                    <div class="card-body-2 p-1">
+                        <h5 class="card-title mb-1">Sarah Jhonson</h5>
+                        <p class="text-muted">Patissier</p>
+                        <div class="d-flex gap-3 justify-content-end">
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="./Delicious/public/images/chefs/chefs-3.jpg" class="card-img-top" alt="Chef">
+                    <div class="card-body-3 p-1">
+                        <h5 class="card-title mb-1">William Anderson</h5>
+                        <p class="text-muted">Cook</p>
+                        <div class="d-flex gap-3 justify-content-end">
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
     <div class="carsal CHAFE">
         <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel" data-bs-interval="2000">
             <div class="carousel-indicators ">
@@ -880,9 +898,8 @@
             </div>
         </div>
     </div>
-
     <!-- section contact -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="row-9">
             <div class="content-menu CANTACT">
                 <button>contact</button>
@@ -997,9 +1014,6 @@
 
 
     </footer>
-
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-
 </body>
-
 </html>
